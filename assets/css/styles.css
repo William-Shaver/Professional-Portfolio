@@ -10,13 +10,15 @@ body {
     /* Above piece keeps the image to the right to blend the colors into the image */
     background: linear-gradient(to right, #00ffff49, #0a16b9ce);
     font-family: 'Poltawski Nowy', serif;
-    padding: 0 0 0 2em;
+    padding: 0 1em;
     text-indent: 2em;
 }
 p {
     font-size: 1.5em;
 }
 .divHeader {
+    background-image: url(/assets/images/AE941405-F622-4C98-B742-5FC2D9160DDD.JPG);
+    background-size: cover;
     text-align: center;
 }
 #me {
@@ -24,4 +26,7 @@ p {
 }
 .aboutFieldset {
     border-color: blue;
+}
+.headerBackground {
+    max-width: 90%;
 }
