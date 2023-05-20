@@ -1,0 +1,26 @@
+.aboutContainer {
+    display: grid;
+    flex-direction: row;
+    padding: 1em;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas:
+     'aboutMe aboutMe myImg'
+     'skills links contact';
+}
+.item1 {
+    grid-area: aboutMe;
+    padding: 0 1em;
+}
+.item2 {
+    grid-area: myImg;
+}
+.item3 {
+    grid-area: links;
+}
+.item4 {
+    grid-area: skills;
+    font-size: 1.2em;
+}
+.item5 {
+    grid-area: contact;
+}
