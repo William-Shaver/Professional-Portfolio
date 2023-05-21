@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <title>William Shaver's Portfolio</title>
 </head>
@@ -16,21 +16,28 @@
     <h1>William Shaver's Portfolio</h1>
         <img src="/assets/images/photo_16_2023-05-15_16-45-52.jpg" alt="A photo I took overlooking the inlet at Teddy Bear Cove and train tracks near Bellingham Washing">
         <!-- Find way to resize image and use full res file -->
-        <p>Hello and thank you for visiting my page. This is where you can find projects I've contributed to or am working on, ways to contact me and a bit about who I am!</p>
+        <p>Thank you for visiting my page. This is where you can find projects I've contributed to or am working on, ways to contact me and a bit about who I am!</p>
+        <nav>
+            <a href="#bio">About Me</a>
+            <a href=""></a>
+        </nav>
         </header>
     </div>
-    <section><h2>About Me</h2></section>
+    <!-- <section><h2>About Me</h2></section> -->
+    <fieldset class="aboutFieldset">
+        <legend><h2>About Me</h2></legend>
     <div class="aboutContainer">
-        <div>
-            <p>Hello, my name is William. I've been interested in coding since a young age and am now attending class part time at WCCI.</p>
+        <div class="item1" id="Bio">
+            <p>Hello, my name is William! I've had an interest in coding since a young age but have always had a hard time sitting down to apply myself, now that I'm a bit older I'm attending class part time at We Can Code IT thanks to Amazon career services.</p>
+            <p>As well as coding I have an interest in Photography, I picked up my first Panasonic GH-4 in Alaska. While I'm an amateur landscape photographer I also love night, city and astrophotography.</p>
         </div>
-        <div class="grid-item Me">
-            <img class="me" src="/assets/images/photo_1_2023-05-15_18-39-57.jpg" alt="A photo of me next to my Ford Escape">
+        <div class="item2">
+            <img id="me" src="/assets/images/photo_3_2023-05-13_08-15-08.jpg" alt="A photo of me next to my Ford Escape">
         </div>
-        <div>
-            <p>Here is you can find my <a href="https://github.com/William-Shaver?tab=repositories">GitHub</a> and <a href="https://www.linkedin.com/">Linkedin</a></p>
+        <div class="item3">
+            <p>Here is where you can find my <a href="https://github.com/William-Shaver?tab=repositories">GitHub</a> and <a href="https://www.linkedin.com/">Linkedin</a></p>
         </div>
-        <div>
+        <div class="item4">
             <p>Skills</p>
             <ul>
                 <li>Photography</li>
@@ -39,7 +46,19 @@
                 <li>Java</li>
             </ul>
         </div>
+        <div class="item5">
+            <form action="" method="post">
+                <fieldset>
+                    <label for="nameFirst">First Name<input type="text" name="name" id="nameFirst" placeholder="John" required></label>
+                    <label for="nameLast"> Last Name<input type="text" name="name" id="nameLast" placeholder="Smith" required></label>
+                    <label for="email">Email Address<input type="email" name="email" id="email" placeholder="JohnSmith@AOL.com" required></label>
+                    <label for="">How can I help you?<textarea name="message" id="message" cols="30" rows="4" placeholder="Hello, I own a restaurant and I was curious if you're available for a website commission?"></textarea></label>
+                    <Label><button type="submit">Submit</button></Label>
+                </fieldset>
+            </form>
+        </div>
     </div>
+    </fieldset>
     <footer></footer>
 </body>
 </html>

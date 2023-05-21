@@ -10,6 +10,11 @@ body {
     /* Above piece keeps the image to the right to blend the colors into the image */
     background: linear-gradient(to right, #00ffff49, #0a16b9ce);
     font-family: 'Poltawski Nowy', serif;
+<<<<<<< HEAD
+=======
+    padding: 0 0 0 2em;
+    text-indent: 2em;
+>>>>>>> Stable
 }
 p {
     font-size: 1.5em;
@@ -17,6 +22,7 @@ p {
 .divHeader {
     text-align: center;
 }
+<<<<<<< HEAD
 .divHeader {
     text-align: center;
 }
@@ -28,3 +34,36 @@ p {
     max-width: 300px;
 }
     
+=======
+.aboutContainer {
+    display: grid;
+    flex-direction: row;
+    padding: 1em;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas:
+     'aboutMe aboutMe myImg'
+     'skills links contact';
+}
+#me {
+    max-width: 450px;
+}
+.aboutFieldset {
+    border-color: blue;
+}
+.item1 {
+    grid-area: aboutMe;
+    padding: 0 1em;
+}
+.item2 {
+    grid-area: myImg;
+}
+.item3 {
+    grid-area: links;
+}
+.item4 {
+    grid-area: skills;
+}
+.item5 {
+    grid-area: contact;
+}
+>>>>>>> Stable
