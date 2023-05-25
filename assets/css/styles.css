@@ -12,21 +12,11 @@ body {
     font-family: 'Poltawski Nowy', serif;
     padding: 0 1em;
     text-indent: 2em;
+    text-align: center;
 }
 p {
     font-size: 1.5em;
 }
-.divHeader {
-    background-image: url(/assets/images/AE941405-F622-4C98-B742-5FC2D9160DDD.JPG);
-    background-size: cover;
-    text-align: center;
-}
 #me {
     max-width: 450px;
-}
-.aboutFieldset {
-    border-color: blue;
-}
-.headerBackground {
-    max-width: 90%;
 }

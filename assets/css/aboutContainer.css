@@ -1,11 +1,52 @@
+.bodyContainer {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns:
+        'header'
+        'content'
+        'footer';
+}
+.header {
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: auto;
+    grid-template-rows:  
+        'background';
+}
+.headerBackground {
+    grid-area: grid;
+    grid-area: background;
+    max-width: 100%;
+    grid-template-rows:
+    'h1Portfolio '
+    'quickIntro Nav'
+}
+.backgroundMenu {
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: 50% 50%;
+    grid-template-rows:
+        'h1Portfolio nav'
+        'quickIntro quickIntro'   
+}
+.h1Portfolio {
+    grid-area: h1Portfolio;
+}
+.quickIntro {
+    grid-area: quickIntro;
+}
+.nav {
+    grid-area: nav;
+}
 .aboutContainer {
     display: grid;
     flex-direction: row;
     padding: 1em;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: auto auto;
     grid-template-areas:
-     'aboutMe aboutMe myImg'
-     'skills links contact';
+     'aboutMe myImg'
+     'contact links'
+     'contact skills';
 }
 .item1 {
     grid-area: aboutMe;
