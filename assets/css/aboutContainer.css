@@ -8,7 +8,7 @@
         'footer';
 }
 .header {
-    display: grid;
+    /* display: grid; */
     grid-area: header;
     flex-direction: row;
     grid-template-rows: 50% 50%
@@ -25,9 +25,20 @@
 }
 .projects {
     grid-area: projects;
+    width: min(70ch, 100% - 6rem);
+    margin-inline: auto;
+    margin-top: .5em;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    /* border-radius: 0 0 25px 25px; */
 }
 .footer {
     grid-area: footer;
+    width: min(70ch, 100% - 4rem);
+    margin-inline: auto;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    border-radius: 0 0 25px 25px;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 .headerBackground {
     grid-area: backgroundimg;
@@ -64,12 +75,11 @@
 .aboutContainer {
     display: grid;
     flex-direction: row;
-    padding: 1em;
-    margin: .5em;
+    padding-bottom: 1em;
     width: min(70ch, 100% - 4rem);
     margin-inline: auto;
     border: 5px solid rgba(30, 30, 230, 0.76);
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
     grid-template-columns: auto auto;
     grid-template-areas:
      'aboutMe myImg'
@@ -78,13 +88,14 @@
 }
 .item1 {
     grid-area: aboutMe;
-    padding: 0 1em;
+    padding: 1em;
 }
 .item2 {
     grid-area: myImg;
 }
 .item3 {
     grid-area: links;
+    padding-left: 1em;
 }
 .item4 {
     grid-area: skills;
