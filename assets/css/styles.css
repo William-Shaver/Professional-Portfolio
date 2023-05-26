@@ -22,7 +22,7 @@ body {
 }
 a:link,
 a:visited {
-    color: #0a16b9ce;
+    color: rgb(255, 255, 255)
 }
 textarea,
 input {
@@ -33,4 +33,12 @@ input {
     margin: .5em;
     /* margin-left: 1em; */
     line-height: 1.5;
+}
+ul{
+    padding-left: 19px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+.pSkills {
+    margin: 0 0 10px 0;
 }
