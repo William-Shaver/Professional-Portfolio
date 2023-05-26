@@ -58,6 +58,7 @@
     width: min(70ch, 100% - 4rem);
     margin-inline: auto;
     border: 5px solid rgba(30, 30, 230, 0.76);
+    border-radius: 25px;
     grid-template-columns: auto auto;
     grid-template-areas:
      'aboutMe myImg'
@@ -80,4 +81,5 @@
 }
 .item5 {
     grid-area: contact;
+    /* margin-inline: auto; */
 }

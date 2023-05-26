@@ -19,6 +19,12 @@ body {
 #me {
     max-width: 450px;
 }
+a:link,
 a:visited {
     color: #0a16b9ce;
+}
+textarea,
+input {
+    vertical-align: top;
+    border-radius: 15px;
 }
