@@ -7,58 +7,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/aboutContainer.css">
+    <link rel="alternative" href="./assets/Files/email.php">
     <title>William Shaver's Portfolio</title>
 </head>
 <body>
-    <div class="divHeader">
-    <header>
-    <h1>William Shaver's Portfolio</h1>
-        <img src="/assets/images/photo_16_2023-05-15_16-45-52.jpg" alt="A photo I took overlooking the inlet at Teddy Bear Cove and train tracks near Bellingham Washing">
-        <!-- Find way to resize image and use full res file -->
-        <p>Thank you for visiting my page. This is where you can find projects I've contributed to or am working on, ways to contact me and a bit about who I am!</p>
-        <nav>
-            <a href="#bio">About Me</a>
-            <a href=""></a>
-        </nav>
+    <div class="bodyContainer">
+        <header class="header">
+            <nav class="nav">
+                <a href="#bio">About Me</a>
+                <a href="">Projects </a>
+                <!-- (add local link) -->
+            </nav>
+                <img class="headerBackground" src="./assets/images/AE941405-F622-4C98-B742-5FC2D9160DDD.JPG" alt="A photo I took overlooking the inlet at Teddy Bear Cove and train tracks near Bellingham Washing">
+                
+                <div class="backgroundMenu">
+                    <h1 class="h1Portfolio">William Shaver's Portfolio</h1>
+            <p class="quickIntro">Thank you for visiting my page. This is where you can find projects I've contributed to or am working on, ways to contact me and a bit about who I am!</p>
+            
+                </div>
+
+            
         </header>
+        <div class="content">
+            <section><h2>About Me</h2></section>
+            <div class="aboutContainer">
+                <div class="item1" id="Bio">
+                    <p>Hello, my name is William! I've had an interest in coding since a young age, but having always been on the move I've always found it difficult to learn. Now that I'm a bit older and settled I'm attending class online at We Can Code IT thanks to Amazon career services.</p>
+                    <p>As well as coding I have an interest in Photography, I picked up my first Panasonic GH-4 in Alaska. While I'm an amateur landscape photographer I also love night, city and astrophotography.</p>
+                </div>
+                <div class="item2">
+                    <img id="me" src="/assets/images/me.jpg" alt="A photo of me next to my Ford Escape">
+                </div>
+                <div class="item3">
+                    <p>You can find me on <a href="https://github.com/William-Shaver?tab=repositories">GitHub</a> and <a href="https://www.linkedin.com/in/william-shaver-668825146/">Linkedin</a>. You can also email me at william.shaver96@gmail.com</p>
+                </div>
+                <div class="item4">
+                    <p>Skills</p>
+                    <ul>
+                        <li>Photography</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="item5">
+                    <!-- <p>You can reach me at william.shaver96@gmail.com or send me an email using the form below.</p> -->
+                    <form action="./assets/Files/email.php" method="post">
+                            <label for="nameFirst">First Name<input type="text" name="emailform" id="nameFirst" placeholder="John" required></label>
+                            <label for="nameLast"> Last Name<input type="text" name="emailform" id="nameLast" placeholder="Smith" required></label>
+                            <label for="email">Email Address<input type="email" name="emailform" id="email" placeholder="JohnSmith@AOL.com" required></label>
+                            <br>
+                            <label for="message">How can I help you?<textarea name="emailform" id="message" cols="60" rows="6" placeholder="Hello, I own a restaurant and I was curious if you're available for a website commission?"></textarea></label>
+                            <Label><button type="submit">Submit</button></Label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div><h2>Projects</h2></div>
+            <div><p>Feel free to take a look at some of the things I've made!</p></div>
+            <div>My <a href="https://github.com/William-Shaver/Professional-Portfolio">Professional Portfolio </a>is my first real project that I've ever made! As it's the first project I've made in class this spot will be a little empty for now, but with every assignment and practice project this will grow!</div>
+        </div>
+        <div class="footer">
+            <footer><p>I need test text here. So for now let me introduce you to a skunk named <a href="https://youtube.com/shorts/DWKrvpZrok4?feature=share"> Atari.</a></p></footer>
+        </div>
     </div>
-    <!-- <section><h2>About Me</h2></section> -->
-    <fieldset class="aboutFieldset">
-        <legend><h2>About Me</h2></legend>
-    <div class="aboutContainer">
-        <div class="item1" id="Bio">
-            <p>Hello, my name is William! I've had an interest in coding since a young age but have always had a hard time sitting down to apply myself, now that I'm a bit older I'm attending class part time at We Can Code IT thanks to Amazon career services.</p>
-            <p>As well as coding I have an interest in Photography, I picked up my first Panasonic GH-4 in Alaska. While I'm an amateur landscape photographer I also love night, city and astrophotography.</p>
-        </div>
-        <div class="item2">
-            <img id="me" src="/assets/images/photo_3_2023-05-13_08-15-08.jpg" alt="A photo of me next to my Ford Escape">
-        </div>
-        <div class="item3">
-            <p>Here is where you can find my <a href="https://github.com/William-Shaver?tab=repositories">GitHub</a> and <a href="https://www.linkedin.com/">Linkedin</a></p>
-        </div>
-        <div class="item4">
-            <p>Skills</p>
-            <ul>
-                <li>Photography</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-            </ul>
-        </div>
-        <div class="item5">
-            <form action="" method="post">
-                <fieldset>
-                    <label for="nameFirst">First Name<input type="text" name="name" id="nameFirst" placeholder="John" required></label>
-                    <label for="nameLast"> Last Name<input type="text" name="name" id="nameLast" placeholder="Smith" required></label>
-                    <label for="email">Email Address<input type="email" name="email" id="email" placeholder="JohnSmith@AOL.com" required></label>
-                    <label for="">How can I help you?<textarea name="message" id="message" cols="30" rows="4" placeholder="Hello, I own a restaurant and I was curious if you're available for a website commission?"></textarea></label>
-                    <Label><button type="submit">Submit</button></Label>
-                </fieldset>
-            </form>
-        </div>
-    </div>
-    </fieldset>
-    <footer></footer>
 </body>
 </html>

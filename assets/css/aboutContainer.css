@@ -1,0 +1,85 @@
+/* .bodyContainer {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns:
+        'header'
+        'content'
+        'footer';
+} */
+.header {
+    /* display: grid;
+    flex-direction: row;
+    grid-template-rows: 100px; */
+
+}
+.headerBackground {
+    width: 100%;
+    max-width: 3000px;
+    max-height: 400px;
+}
+/* .headerBackground {
+    grid-area: backgroundimg;
+    image-resolution: 1000px;
+    max-width: ;
+    grid-template-rows: 500px;
+        grid-template-rows:  
+        'backgroundimg backgroundimg'
+        'h1Portfolio'
+        'quickIntro'
+        'nav';
+    
+ } */
+
+/* .backgroundMenu {
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: 50% 50%;
+    grid-template-rows:
+        'h1Portfolio nav'
+        'quickIntro quickIntro'   
+} */
+.h1Portfolio {
+    grid-area: h1Portfolio;
+
+}
+.quickIntro {
+    grid-area: quickIntro;
+    padding: 1em;
+}
+.nav {
+    grid-area: nav;
+    background-color: forestgreen;
+}
+.aboutContainer {
+    display: grid;
+    flex-direction: row;
+    padding: 1em;
+    margin: .5em;
+    width: min(70ch, 100% - 4rem);
+    margin-inline: auto;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    border-radius: 25px;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+     'aboutMe myImg'
+     'links skills'
+     'contact contact';
+}
+.item1 {
+    grid-area: aboutMe;
+    padding: 0 1em;
+}
+.item2 {
+    grid-area: myImg;
+}
+.item3 {
+    grid-area: links;
+}
+.item4 {
+    grid-area: skills;
+    font-weight: bold;
+}
+.item5 {
+    grid-area: contact;
+    /* margin-inline: auto; */
+}
