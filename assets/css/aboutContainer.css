@@ -9,31 +9,33 @@
         'footer';
 }
 .header {
+    grid-area: header;
     display: grid;
     flex-direction: row;
+    grid-template-rows: auto auto auto;
     grid-template-columns: auto;
-
-    /* grid-area: headerbg; */
-    width: 100%;
-    max-width: 3000px;
-    max-height: 400px;
-
-    grid-template-rows: auto auto
-        'nav nav'
-        'headerbg headerbg'
-        '';
+    grid-template-areas:
+        'headerbg'
+        'h1Portfolio'
+        'quickIntro'
 }
-/* .headerBackground {
-    grid-area: headerbg;
-    width: 100%;
-    max-width: 3000px;
-    max-height: 400px;
-} */
+.backgroundMenu {
+    /* display: grid;  */
+    flex-direction: row;
+    grid-template-rows: auto auto;
+    grid-template-areas: auto
+        'h1Portfolio'
+        'quickIntro';
+}
+.headerBackground {
+    grid-area:headerbg;
+    image-resolution: 3600px;
+    max-width: 100%;
+}
 .content {
     grid-area: content;
 }
 .projects {
-    
     display: grid;
     grid-area: projects;
     flex-direction: row;
@@ -42,14 +44,13 @@
     width: min(70ch, 100% - 4rem);
     grid-template-columns: auto auto;
     margin-top: .5em;
-    padding: 1em;
-    /* flex-wrap: wrap; */
-    grid-template-rows: 50px 30px auto auto;
+    padding: 0 2em 0 0;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         'h2projects h2projects'
         'pProjects pProjects'
         'professionalPortfolio professionalPortfolio'
-        'leatherFormCert leatherFormCert';
+        'leatherScreenshot leatherFormCert';
 }
 .h2Projects {
     grid-area: h2projects;
@@ -63,6 +64,10 @@
 .leatherFormCert {
     grid-area: leatherFormCert;
 }
+.leatherScreenshot {
+    grid-area: leatherScreenshot;
+    max-width: 500px;
+}
 
 .footer {
     grid-area: footer;
@@ -74,26 +79,6 @@
     margin-bottom: .5em;
     padding: 1em;
 }
-.headerBackground {
-    grid-area: backgroundimg;
-    image-resolution: 3600px;
-    max-width: 100%;
-    /* grid-template-rows: 500px;
-        grid-template-rows:  
-        'backgroundimg backgroundimg'
-        'h1Portfolio nav'
-        'quickIntro'; */
-    
-}
-
-/* .backgroundMenu {
-    display: grid;
-    flex-direction: row;
-    grid-template-rows: 50% 50%;
-    grid-template-rows:
-        'h1Portfolio nav'
-        'quickIntro quickIntro'   
-} */
 .h1Portfolio {
     grid-area: h1Portfolio;
 

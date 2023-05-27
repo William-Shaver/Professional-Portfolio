@@ -23,18 +23,19 @@ body {
 }
 a:link,
 a:visited {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 textarea,
 input {
     vertical-align: top;
     border-radius: 10px;
-    /* padding-right: .5em; */
-    /* padding: .5em; */
     margin: .5em;
-    /* margin-left: 1em; */
     line-height: 1.5;
 }
+a:hover {
+    text-decoration: underline;
+  }
 ul{
     padding-left: 19px;
     padding-bottom: 15px;
@@ -43,7 +44,10 @@ ul{
 .pSkills {
     margin: 0 0 10px 0;
 }
-article {
-    background-image: url(assets/images/leatherCommissionScreenshot.png);
-
+#leatherScreenshotID {
+    max-width: 550px;
+}
+.linkedIcon {
+    max-width: 32px;
+    /* padding: 1em; */
 }
