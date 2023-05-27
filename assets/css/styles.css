@@ -8,7 +8,8 @@ body {
     background-repeat:repeat-y;
     background-position: right; */
     /* Above piece keeps the image to the right to blend the colors into the image */
-    background: linear-gradient(to right, #00ffff49, #0a16b9ce);
+    background: linear-gradient(120deg, #00ffff79, #0a16b9ce);
+    /* background: linear-gradient(210deg, #0a16b9ce, #00ffff49); */
     font-family: 'Poltawski Nowy', serif;
     text-align: center;
     line-height: 1.5;
@@ -18,7 +19,7 @@ body {
 }
 #me {
     max-width: 100%;
-    border-top-right-radius: 25px;
+
 }
 a:link,
 a:visited {
@@ -41,4 +42,8 @@ ul{
 }
 .pSkills {
     margin: 0 0 10px 0;
+}
+article {
+    background-image: url(assets/images/leatherCommissionScreenshot.png);
+
 }

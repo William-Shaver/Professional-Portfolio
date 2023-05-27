@@ -1,37 +1,69 @@
 .bodyContainer {
-    /* display: grid; */
+    display: grid;
     flex-direction: row;
-    grid-template-rows: 1000px
+    grid-template-areas:
+        'nav'
         'header'
         'content'
-        'project'
+        'projects'
         'footer';
 }
 .header {
-    /* display: grid; */
-    grid-area: header;
+    display: grid;
     flex-direction: row;
-    grid-template-rows: 50% 50%
-        'h1Portfolio nav'
-        'quickIntro';
-}
-.headerBackground {
+    grid-template-columns: auto;
+
+    /* grid-area: headerbg; */
     width: 100%;
     max-width: 3000px;
     max-height: 400px;
+
+    grid-template-rows: auto auto
+        'nav nav'
+        'headerbg headerbg'
+        '';
 }
+/* .headerBackground {
+    grid-area: headerbg;
+    width: 100%;
+    max-width: 3000px;
+    max-height: 400px;
+} */
 .content {
     grid-area: content;
 }
 .projects {
+    
+    display: grid;
     grid-area: projects;
-    width: min(70ch, 100% - 4rem);
+    flex-direction: row;
     margin-inline: auto;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    width: min(70ch, 100% - 4rem);
+    grid-template-columns: auto auto;
     margin-top: .5em;
     padding: 1em;
-    border: 5px solid rgba(30, 30, 230, 0.76);
-    /* border-radius: 0 0 25px 25px; */
+    /* flex-wrap: wrap; */
+    grid-template-rows: 50px 30px auto auto;
+    grid-template-areas:
+        'h2projects h2projects'
+        'pProjects pProjects'
+        'professionalPortfolio professionalPortfolio'
+        'leatherFormCert leatherFormCert';
 }
+.h2Projects {
+    grid-area: h2projects;
+}
+.pProjects {
+    grid-area: pProjects;
+}
+.professionalPortfolio {
+    grid-area: professionalPortfolio;
+}
+.leatherFormCert {
+    grid-area: leatherFormCert;
+}
+
 .footer {
     grid-area: footer;
     width: min(70ch, 100% - 4rem);
@@ -52,7 +84,7 @@
         'h1Portfolio nav'
         'quickIntro'; */
     
- }
+}
 
 /* .backgroundMenu {
     display: grid;
@@ -72,25 +104,30 @@
 }
 .nav {
     grid-area: nav;
+    grid-row-start: 1;
     background-color: forestgreen;
 }
 .aboutContainer {
     display: grid;
     flex-direction: row;
-    padding: 0 0 1em 2em;
-    width: min(70ch, 100% - 4rem);
     margin-inline: auto;
     border: 5px solid rgba(30, 30, 230, 0.76);
-    border-radius: 25px 25px 0 0;
+    width: min(70ch, 100% - 4rem);
+    /* grid-template-columns: 58.5% 289px; */
     grid-template-columns: auto auto;
+    
+    border-radius: 25px 25px 0 0;
+    padding: 0 0 1em 2em;
     grid-template-areas:
-     'aboutMe myImg'
-     'links skills'
-     'contact contact';
+    'h2 h2'
+    'aboutMe myImg'
+    'links skills'
+    'contact contact';
 }
 .item1 {
     grid-area: aboutMe;
     padding-right: 1em;
+    margin-top: 0;
 }
 .item2 {
     grid-area: myImg;
@@ -106,4 +143,7 @@
 .item5 {
     grid-area: contact;
     /* margin-inline: auto; */
+}
+.item6 {
+    grid-area: h2;
 }
