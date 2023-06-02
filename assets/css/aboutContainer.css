@@ -14,6 +14,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+    word-break: break-word;
+    padding-bottom: .5em;
 /* I'm not sure if any of the below code is better/needed */
     /* flex-direction: row;
     grid-template-rows: auto auto auto;
@@ -26,7 +29,8 @@
 .quickIntro {
     grid-area: quickIntro;
     padding: 1em;
-    align-self: unset;
+    position: absolute;
+    color: rgb(255, 255, 255);
 }
 .headerBackground {
     grid-area:headerbg;
